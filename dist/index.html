@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="UTF-8"> -->
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+<title>移动项目练习</title>
+<link href="css/index-5a4cbc57d2.css" rel="stylesheet">
+<script type="text/javascript">
+	(function(){
+	  window.zhuge = window.zhuge || [];
+	  window.zhuge.methods = "_init identify track getDid getSid getKey setSuperProperty setUserProperties setPlatform".split(" ");
+	  window.zhuge.factory = function(b) {
+		  return function() {
+			  var a = Array.prototype.slice.call(arguments);
+			  a.unshift(b);
+			  window.zhuge.push(a);
+			  return window.zhuge;
+		  }
+	  };
+	  for (var i = 0; i < window.zhuge.methods.length; i++) {
+		  var key = window.zhuge.methods[i];
+		  window.zhuge[key] = window.zhuge.factory(key);
+	  }
+	  window.zhuge.load = function(b, x) {
+		  if (!document.getElementById("zhuge-js")) {
+			  var a = document.createElement("script");
+			  var verDate = new Date();
+			  var verStr = verDate.getFullYear().toString()
+				  + verDate.getMonth().toString() + verDate.getDate().toString();
+  
+			  a.type = "text/javascript";
+			  a.id = "zhuge-js";
+			  a.async = !0;
+			  a.src = (location.protocol == 'http:' ? "http://sdk.zhugeio.com/zhuge.min.js?v=" : 'https://zgsdk.zhugeio.com/zhuge.min.js?v=') + verStr;
+			   a.onerror = function(){  
+			   window.zhuge.identify = window.zhuge.track = function(ename, props, callback){                   
+				 if(callback && Object.prototype.toString.call(callback) === '[object Function]')callback();               
+				  };     
+			  };
+			  var c = document.getElementsByTagName("script")[0];
+			  c.parentNode.insertBefore(a, c);
+			  window.zhuge._init(b, x)
+		  }
+	  };
+			  window.zhuge.load('此处填写您在诸葛申请的APP KEY', {
+				  superProperty: {//全局的事件属性(选填)               
+					 '应用名称': '诸葛io'           
+				  },           
+				  autoTrack: false, //启用全埋点采集（选填，默认false） 
+				  visualizer: false, //启用可视化埋点（选填，默认false）           
+				  singlePage: false //是否是单页面应用（SPA），启用autoTrack后生效（选填，默认false）       
+			 });
+	})(); 
+  </script>
+</head>
+<body style="margin:0px;">
+	<header>
+		<div class="scroll-info">
+				<div class="mtabs" id="tabs1">
+					<ul class="mhead">
+						<li>两会</li>
+						<li>春分</li>
+						<li>娱乐</li>
+						<li>新闻</li>
+					</ul>
+					<div class="mcontent">
+						<ul class="lianghui">
+							<div class="mimg">
+								<img src="./assets/images/banner.jpg" alt="">
+							</div>
+							<div class="mintroduce">
+								本次两会主要内容：1、的娇你是快乐的时间内卡大家能接受的年纪卡萨诺的空间额外加咖啡能看见饿我不反抗味精翻炒几点福建俄咖啡能考几分呢蜂王浆呢；2、豆腐脑可能都是看能否 i 恩里克
+							</div>
+							<div class="mvideo">
+								<img src="./assets/images/banner.jpg" alt="">
+								<!-- <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=e0029pciah8" allowFullScreen="true"></iframe> -->
+							</div>
+							<!-- <button id="btn">按钮</button> -->
+							<div class="mview">
+								<span>请看以下人物的观点：</span>
+								<div class="mleft">
+									<p class="tx">
+										<img src="./assets/images/user-1.png" alt="">
+										<b>身份一</b>
+									</p>
+									<p class="wz">
+										“今年全国两会最后一场委员通道上对于经济发展的重要意义。 ”
+									</p>
+								</div>
+								<div class="mright">
+									<p class="wz">
+										下一步将展开千兆光纤入户的试点工作，移动流量的通讯费用将再下降20%以上，中小企业专线资费将下降15%以上。
+									</p>
+									<p class="tx">
+										<img src="./assets/images/user-2.png" alt="">
+										<b>身份二</b>
+									</p>
+								</div>
+								<div class="mleft">
+									<p class="tx">
+										<img src="./assets/images/user-3.png" alt="">
+										<b>身份三</b>
+									</p>
+									<p class="wz">
+										“今年全国两会政协委员也多次提及科技创新对于经济发展的重要意义。 ”
+									</p>
+								</div>
+								<div class="mright">
+									<p class="wz">
+										千兆光纤入户的试点工作。
+									</p>
+									<p class="tx">
+										<img src="./assets/images/user-4.png" alt="">
+										<b>身份四</b>
+									</p>
+								</div>
+							</div>
+						</ul>
+						<ul class="springbg">
+							<div class="springbg_module">
+								<img src="./assets/images/bg_01.jpg" alt="">
+							</div>
+							<div class="springbg_module">
+								<img src="./assets/images/bg_02.jpg" alt="">
+							</div>
+							<div class="springbg_module">
+								<img src="./assets/images/bg_03.jpg" alt="">
+							</div>
+							<div class="springbg_module">
+								<img src="./assets/images/bg_04.jpg" alt="">
+							</div>
+							<div class="springbg_module">
+								<img src="./assets/images/bg_05.jpg" alt="">
+							</div>
+						</ul>
+						<ul>
+							<li>娱乐娱乐娱乐娱乐娱乐</li>
+							<li>娱乐娱乐娱乐娱乐娱乐</li>
+							<li>娱乐娱乐娱乐娱乐娱乐</li>
+							<li>娱乐娱乐娱乐娱乐娱乐</li>
+							<li>娱乐娱乐娱乐娱乐娱乐</li>
+						</ul>
+						<ul>
+							<li>新闻新闻新闻新闻新闻新闻新闻新闻</li>
+							<li>新闻新闻新闻新闻新闻新闻新闻新闻</li>
+							<li>新闻新闻新闻新闻新闻新闻新闻新闻</li>
+							<li>新闻新闻新闻新闻新闻新闻新闻新闻</li>
+							<li>新闻新闻新闻新闻新闻新闻新闻新闻</li>
+						</ul>
+					</div>
+				</div><!-- End mtabs -->
+		</div>
+	</header>
+	<div class="container">
+
+	</div>
+	<footer>
+		<div class="footer">
+			<ul>
+				<li><a href="">
+					<i></i>
+					<b>主页</b>
+				</a></li>
+				<li><a href="">
+					<i></i>
+					<b>找灵感</b>
+				</a></li>
+				<li><a href="">
+					<i></i>
+					<b>在线咨询</b>
+				</a></li>
+				<li><a href="">
+					<i></i>
+					<b>服务连线</b>
+				</a></li>
+			</ul>
+		</div>
+	</footer>
+	<div id="app_share_data" style="display: none;">
+		<div id="app_title">墨迹天气与你春日相逢</div>
+		<div id="app_desc">春风、春日、春暖、春长，墨迹天气与你春日相逢</div>
+		<div id="app_link"></div>
+		<img id="app_img_url"/>
+		<img id="app_big_img_url"/>
+	</div>
+	<!-- jssdk -->
+	<script src="http://promo.moji.com/js-sdk/h5app/js/moji.sdk_new.js"></script>
+	<!-- 分享 -->
+	<script src="https://html5.moji.com/tpd/public/js/download_app3.2.js "></script>
+	<script src="js/index-3f5afd21f3.js"></script>
+</body>
+</html>

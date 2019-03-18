@@ -1,0 +1,199 @@
+@import "reset.less";
+body{background:#ffffff;}
+body,div,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,iframe,input,textarea,select,label,article,aside,footer,header,menu,nav,section,time,audio,video{margin:0;padding:0;}
+ol,ul,li{list-style: none;}
+body{font-size: 100%; font-family: Helvetica,STHeiti,Droid Sans Fallback;}
+header{
+    display: block;
+    height: 0.44rem;
+    font-size: 0.14rem;
+    color: #888888;
+    border-bottom: 0.01rem solid #888888;
+    .mtabs{width: 100%;overflow: hidden;margin: 0;}
+    .mhead{
+        height: 0.44rem; 
+        border-top: 0.02rem solid #9ac7ed;
+        background: #ECF2F6;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+        display: flex;
+        justify-content: center;
+    }
+    .mhead li{
+        position: relative;
+        font-size: 0.14rem;
+        text-align: center;
+        float: left; width: 0.64rem; 
+        height: 0.44rem; 
+        line-height: 0.44rem;
+        color: #2a70be;
+    }
+    .mhead li.current {
+        border-top: 0.02rem solid #2a70be;
+        margin-top: -0.02rem;
+        background: #FFF;
+        color: #c14545;
+    }
+    .mcontent{
+        width: 100%;
+        overflow: hidden;
+        // margin-bottom:  0.49rem;
+        
+        // background: #c14545;
+        ul{
+            width: 100%;
+            float: left;
+            li{
+                height: 0.35rem;
+                line-height: 0.35rem;
+                font-size: 1.125em;
+                padding: 0 0.1rem;
+            }
+        }
+        .lianghui{
+            // margin-bottom:  0.7rem;
+            .mimg{
+                font-size: 0;
+                img{
+                    width: 100%;
+                }
+            }
+            .mintroduce{
+                font-size: 0.14rem;
+                margin: 0.05rem 0.05rem;
+                text-indent: 0.3rem;
+            }
+            .mvideo{
+                // iframe{
+                //     width: 100%;
+                //     margin: 0;
+                //     padding: 0;
+                //     position: relative;
+                //     display: block;
+                // }
+                img{
+                    width: 100%;
+                }
+            }
+            .mview{
+                >div{
+                    // vertical-align: center;
+                }
+                >span{
+                    display: block;
+                    padding-top: 0.2rem;
+                    padding: 0.2rem 0 0.2rem 0.1rem;
+                }
+                .mleft,.mright{
+                    box-sizing: border-box;
+                    font-size: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0.3rem 0 0 0;
+                    p{
+                        display: inline-block;
+                    }
+                    .tx{
+                        width: 30%;
+                        img{
+                            width: 0.8rem;
+                        }
+                        b{
+                            display: block;
+                            font-size: 0.14rem;
+                            text-align: center;
+                            margin-top: 0.1rem;
+                        }
+                    }
+                    .wz{
+                        font-size: 0.14rem;
+                        width: 2rem;
+                        vertical-align: middle;
+                        background: #013e6d;
+                        color: #ffffff;
+                        padding: 0.2rem 0.3rem;
+                        border-radius: 1rem;
+                    }
+                }
+                .mleft{
+                    .tx{
+                        margin-left: 0.2rem;
+                    }
+                    .wz{
+                        margin-right: 0.2rem;
+                    }
+                }
+                .mright{
+                    .tx{
+                        text-align: right;
+                        margin-right: 0.2rem;
+                    }
+                    .wz{
+                        margin-left: 0.2rem;
+                    }
+                }
+            }
+        }
+        .springbg{
+            .springbg_module{
+                font-size: 0;
+                position: relative;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+footer{
+    background: #ffffff;
+    display: block;
+    width: 100%;
+    height: 0.49rem;
+    // line-height: 0.49rem;
+    position: fixed;
+    bottom: 0;
+    // 线上阴影
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+    -o-box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+    ul{
+        display: flex;
+        justify-content: space-around;
+        li{
+            width: 25%;
+            text-align: center;
+            a{
+                display: block;
+                font-size: 0.12rem;
+                color: #2a70be;
+                text-decoration: none;
+                i{
+                    height: 0.25rem;
+                    display: block;
+                }
+                b{
+                    font-weight: normal;
+                }
+                
+            }
+            
+        }
+        
+        li:first-child{
+            i{
+                // background: url('../assets/images/index.png') no-repeat;
+                // background: url(require('../assets/images/index.png') no-repeat);
+                // background: url('@/assets/images/index.png') no-repeat;
+                // background: require('../assets/images/index.png') no-repeat 10px 8px;
+                background: url(../assets/images/index.png) 0 45px no-repeat;
+                // background: ~"url(‘@{../assets/images}@index.png’)"
+                // background-image:  require('../assets/images/index.png') no-repeat 10px 8px;
+                // background: url(require('../assets/images/index.png'))
+                // background-image: url('../assets/images/@{index}.png');
+                // background: url('../assets/images/@{index}.png')
+            }
+        }
+    }
+}
